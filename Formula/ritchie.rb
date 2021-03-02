@@ -9,9 +9,9 @@ class Ritchie < Formula
 
     def install
         libexec.install Dir["*"]
-        libexec/"bin/install.sh"
-        
         bin.install "install.sh"
+
+        libexec/"bin/install.sh"        
     end
 
 end
