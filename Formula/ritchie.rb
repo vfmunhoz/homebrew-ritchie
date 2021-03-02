@@ -8,10 +8,10 @@ class Ritchie < Formula
     bottle :unneeded
 
     def install
-        bin.install "install.sh"
-        
-        # system "./install.sh"
+        libexec.install Dir["*"]
         libexec/"bin/install.sh"
+        
+        bin.install "install.sh"
     end
 
 end
