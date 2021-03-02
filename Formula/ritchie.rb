@@ -8,10 +8,10 @@ class Ritchie < Formula
     bottle :unneeded
 
     def install
-        chmod 0755, "install.sh"
-        system "./install.sh"
+        bin.install "install.sh"
         
-        libexec.install %w[install.sh]
+        # system "./install.sh"
+        libexec/"bin/install.sh"
     end
 
 end
