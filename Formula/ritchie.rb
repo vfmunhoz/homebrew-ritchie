@@ -1,4 +1,4 @@
-class RitchieTool < Formula
+class Ritchie < Formula
     desc "CLI tool for writing your own automations"
     homepage "https://github.com/ZupIT/ritchie-cli"
     url "https://commons-repo.ritchiecli.io/install.sh"
