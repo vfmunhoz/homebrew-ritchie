@@ -9,9 +9,9 @@ class Ritchie < Formula
 
     def install
         chmod 0755, "install.sh"
-        libexec.install %w[install.sh]
-        
         system "./install.sh"
+        
+        libexec.install %w[install.sh]
     end
 
 end
